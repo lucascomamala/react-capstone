@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.home-link {
+  font-weight: 900;
+}
+
+.home-link:hover {
+  color: rgb(103, 24, 24);
+}
+
+.navigation-bar {
+  background-color: rgb(255, 255, 255, 0.7);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, .8), transparent, rgba(0, 0, 0, .8)), url(/public/media/grid-noise.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: 'avengers', sans-serif;
+  font-weight: 900;
+}
+
+.navigation-ul {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logo {
+  height: 100px;
+}
+
+@media all and (min-width: 768px) {
+  .navigation-bar {
+    position: fixed;
+    margin: auto;
+    z-index: 100;
+    width: 700px;
+    left: 50%;
+    top: 10px;
+    margin-left: -350px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px black;
+  }
+}

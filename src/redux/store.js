@@ -1,9 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import main from './mainSlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    main,
+  },
   middleware: [thunk, logger],
 });
 

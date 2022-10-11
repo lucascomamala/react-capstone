@@ -1,6 +1,7 @@
 /* eslint-disable */
 import axios from 'axios';
 
+const DDRAGON_URI = `http://ddragon.leagueoflegends.com`;
 const CHAMP_LIST_URI = `${DDRAGON_URI}/cdn/12.19.1/data/en_US/champion.json`;
 
 const initialState = {

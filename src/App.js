@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from './redux/mainSlice';
 import Navbar from './components/NavBar';
-import Home from './components/home/Home';
+import HomePage from './components/home/Home';
+import ChampionPage from './components/champion/ChampionPage';
 import './App.css';
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/champion" element={<Champion />} /> */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/champion" element={<ChampionPage />} />
         </Routes>
       </main>
     </>

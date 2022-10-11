@@ -1,11 +1,6 @@
 /* eslint-disable */
 import axios from 'axios';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-
-const BASE_URI_V4 = `https://na1.api.riotgames.com`;
-const BASE_URI_V5 = `https://americas.api.riotgames.com`;
-const DDRAGON_URI = `http://ddragon.leagueoflegends.com`;
 const CHAMP_LIST_URI = `${DDRAGON_URI}/cdn/12.19.1/data/en_US/champion.json`;
 
 const initialState = {

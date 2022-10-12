@@ -52,12 +52,11 @@ const ChampionPage = () => {
                   <Difficulty champ={champ} />
                 </ul>
               </div>
-              <div className="BzQWK info-divider"></div>
-              <div className="efkwqI champ-lore">
+              <div className="info-divider"></div>
+              <div className="champ-lore">
                 <p>{champ.lore}</p>
               </div>
             </div>
-            <div className="jPTVXh"></div>
           </div>
         </div>
       </section>

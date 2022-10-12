@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .home-link {
   font-weight: 900;
 }
@@ -14,10 +18,10 @@
 }
 
 .navigation-bar {
-  background-color: rgb(255, 255, 255, 0.7);
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, .8), transparent, rgba(0, 0, 0, .8)), url(/public/media/grid-noise.png);
+  background-color: rgba(61, 61, 61, 0.7);
+  background-image: url(/public/media/grid-noise.png);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   font-family: 'avengers', sans-serif;
@@ -38,8 +42,16 @@
   height: 100px;
 }
 
+.home-navlink {
+  font-size: 1.5rem;;
+  font-family: Papyrus, Times, serif;
+  color: black;
+}
+
 @media all and (min-width: 768px) {
   .navigation-bar {
+    background-color: rgb(255, 255, 255, 0.7);;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .8), transparent, rgba(0, 0, 0, .8)), url(/public/media/grid-noise.png);
     position: fixed;
     margin: auto;
     z-index: 100;
@@ -47,7 +59,7 @@
     left: 50%;
     top: 10px;
     margin-left: -350px;
-    padding: 10px;
+    padding: 5px 30px;
     border-radius: 30px;
     box-shadow: 0 0 15px black;
   }

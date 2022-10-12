@@ -7,7 +7,7 @@ const ChampionPage = () => {
   const location = useLocation();
   const individualHero = location.state;
   // const individualHeroComics = individualHero.comics.items;
-  console.log(location);
+  console.log(individualHero);
   return (
     <div className="champion-page-container">
      

@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import main from './mainSlice';
+import champions from './HomeSlice';
 
 const store = configureStore({
   reducer: {
-    main,
+    champions,
   },
   middleware: [thunk, logger],
 });

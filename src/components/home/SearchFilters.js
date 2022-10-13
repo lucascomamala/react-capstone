@@ -13,12 +13,10 @@ const SearchFilter = ({ search }) => {
   // Name search box handler
   const handleNameChange = (nameQ) => {
     setName(nameQ);
-    console.log('change name', name);
     search({ name: nameQ, role: role, difficulty: difficulty });
   };
   const resetName = () => {
     setName('');
-    console.log('reset name', name);
     search({ name: '', role: role, difficulty: difficulty });
   };
 

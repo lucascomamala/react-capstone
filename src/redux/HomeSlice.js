@@ -41,30 +41,21 @@ const homeSlice = createSlice({
   reducers: {
     filterChamps: (state, { payload }) => {
       if (payload) {
-        console.log('paylaod name', payload.name);
-        console.log('paylaod role', payload.role);
-        console.log('paylaod diff', payload.difficulty);
         let newList = current(state.detailed);
         if (payload.name) {
-          console.log('name ok');
           newList = newList.filter((champ) => champ.name.toLowerCase().includes(payload.name.toLowerCase()));
         }
         if (payload.role) {
-          console.log('role ok');
           newList = newList.filter((champ) => champ.tags.includes(payload.role));
         }
         if (payload.difficulty) {
-          console.log('difficulty ok');
           if (payload.difficulty === 'Low') {
-            console.log('low ok');
             newList = newList.filter((champ) => 0 <= champ.info.difficulty && champ.info.difficulty <= 3);
           }
-          else if (payload.difficulty === 'Moderat') {
-            console.log('moderate ok');
+          else if (payload.difficulty === 'Moderate') {
             newList = newList.filter((champ) => 4 <= champ.info.difficulty && champ.info.difficulty <= 7);
           }
           else if (payload.difficulty === 'High') {
-            console.log('high ok');
             newList = newList.filter((champ) => 8 <= champ.info.difficulty);
           }
         }

@@ -43,15 +43,15 @@ a {
 }
 
 .home-navlink {
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
   font-family: Papyrus, Times, serif;
   color: black;
 }
 
 @media all and (min-width: 768px) {
   .navigation-bar {
-    background-color: rgb(255, 255, 255, 0.7);;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, .8), transparent, rgba(0, 0, 0, .8)), url(/public/media/grid-noise.png);
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/public/media/grid-noise.png);
     position: fixed;
     margin: auto;
     z-index: 100;

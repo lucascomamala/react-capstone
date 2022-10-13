@@ -36,7 +36,7 @@ const ChampionPage = () => {
                       <span>{champ.title}</span>
                     </div>
                   </span>
-                  <strong className="fXBrkV">
+                  <strong className="name-name">
                     <div className="show-se">
                       <span>{champ.name}</span>
                     </div>

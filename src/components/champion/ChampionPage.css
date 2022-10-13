@@ -1,6 +1,6 @@
 .champ-page-container {
   background-color: #100707;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, .8), transparent, rgba(0, 0, 0, .8)), url(/public/media/grid-noise.png);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/public/media/grid-noise.png);
   min-height: 100vh;
   padding: 0 0;
   display: flex;
@@ -15,7 +15,7 @@ body {
 h1 {
   font-family: "Beaufort for LOL", serif;
   font-size: 2em;
-  margin: 0.67em 0px;
+  margin: 0.67em 0;
 }
 
 img {
@@ -26,14 +26,14 @@ img {
   position: relative;
   min-height: 75vh;
   width: 100%;
-  padding: 30px 0px 75px;
+  padding: 30px 0 75px;
   background: rgb(0, 9, 19);
 }
 
 .background-asset {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 80vh;
   max-height: 800px;
@@ -48,7 +48,7 @@ img {
   height: 110%;
 }
 
-.background-img>* {
+.background-img > * {
   display: block;
   width: 100%;
   height: 100%;
@@ -61,7 +61,7 @@ img {
 .background-img::after {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   bottom: -10%;
   width: 100%;
   height: 50%;
@@ -71,8 +71,8 @@ img {
 .inner-section {
   box-sizing: border-box;
   max-width: 1335px;
-  padding: 0px 3.75rem;
-  margin: 0px auto;
+  padding: 0 3.75rem;
+  margin: 0 auto;
 }
 
 .foreground-asset {
@@ -85,8 +85,8 @@ img {
 
 .foreground-asset * {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   animation: 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms 1 normal both running lbWRkT;
@@ -96,7 +96,7 @@ img {
 
 .info-dock {
   position: relative;
-  margin: -5.625rem 3.75rem 0px;
+  margin: -5.625rem 3.75rem 0;
 }
 
 .kklxxj {
@@ -124,7 +124,7 @@ img {
 }
 
 .name-heading {
-  margin: 0px;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -139,7 +139,6 @@ img {
 }
 
 .show-nw {
-  clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
   animation-fill-mode: backwards;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -149,8 +148,7 @@ img {
   animation-name: gNisDK;
 }
 
-.show-nse {
-  clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+.show-se {
   animation-fill-mode: backwards;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -160,7 +158,7 @@ img {
   animation-name: iueStm;
 }
 
-.fXBrkV {
+.name-name {
   display: block;
   font-size: 120px;
   line-height: 0.85;
@@ -170,9 +168,9 @@ img {
   font-style: italic;
 }
 
-.fXBrkV span {
+.name-name span {
   display: block;
-  padding: 0px 15px 10px;
+  padding: 0 15px 10px;
   margin-bottom: -10px;
   text-transform: uppercase;
 }
@@ -185,8 +183,8 @@ img {
 
 .specs-list {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -206,7 +204,7 @@ img {
   width: 50px;
   height: 50px;
   position: relative;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .role-icon {
@@ -231,7 +229,7 @@ img {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 0px 8% 0px 5%;
+  padding: 0 8% 0 5%;
   box-sizing: border-box;
   white-space: nowrap;
   text-transform: uppercase;
@@ -274,7 +272,7 @@ img {
 
 .info-divider {
   width: 1px;
-  margin: 2.5rem 0px;
+  margin: 2.5rem 0;
   background: rgba(255, 255, 255, 0.2);
   transform-origin: center top;
   animation: 400ms cubic-bezier(0.215, 0.61, 0.355, 1) 780ms 1 normal both running izbhlD;
@@ -292,7 +290,7 @@ img {
 
 .champ-lore p {
   max-width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
   line-height: 1.28571;
@@ -300,7 +298,7 @@ img {
 }
 
 @media (min-width: 600px) {
-  .fXBrkV {
+  .name-name {
     font-size: 80px;
     font-size: calc(61.82px + 3.03vw);
   }
@@ -308,7 +306,7 @@ img {
 
 @media (max-width: 599px) {
   .info-dock {
-    margin: -1.875rem 0px 0px;
+    margin: -1.875rem 0 0;
   }
 
   .champ-name {
@@ -320,7 +318,7 @@ img {
     font-size: 1rem;
   }
 
-  .fXBrkV {
+  .name-name {
     font-size: 36px;
     margin-top: 0.3125rem;
   }
@@ -358,7 +356,7 @@ img {
   .info-divider {
     width: calc(100% - 18.75rem);
     height: 1px;
-    margin: 0px auto;
+    margin: 0 auto;
   }
 
   .champ-lore {
@@ -373,7 +371,7 @@ img {
 
 @media (max-width: 1200px) {
   .inner-section {
-    padding: 0px 0.625rem;
+    padding: 0 0.625rem;
   }
 }
 

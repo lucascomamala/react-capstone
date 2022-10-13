@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -34,7 +33,7 @@ const SearchFilter = ({ search }) => {
       <div className="name-filter">
         <form className="search-box">
           <input value={name} onChange={(e) => { handleNameChange(e.target.value); }} type="text" placeholder=" " />
-          <button type="reset" onClick={resetName} aria-label="clear search" />
+          <button type="button" onClick={resetName} aria-label="clear search" />
         </form>
       </div>
       <div className="role-filter">

@@ -199,6 +199,12 @@
   user-select: none;
 }
 
+.champion-card > img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 0 5px hsl(0deg 0% 100% / 70%), 0 0 15px hsl(0deg 0% 100% / 70%), 0 0 40px red;
+}
+
 @media (min-width: 768px) {
   .home-container {
     background-color: #000;

@@ -1,9 +1,8 @@
-/* eslint-disable*/
 import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import Role from './Role.js'
-import Difficulty from './Difficulty.js';
+import Role from './Role';
+import Difficulty from './Difficulty';
 import './ChampionPage.css';
 
 const ChampionPage = () => {
@@ -11,7 +10,7 @@ const ChampionPage = () => {
   const location = useLocation();
   const champKey = location.state;
   const champ = state.detailed.find((champ) => champ.id === champKey);
-  
+
   useEffect(() => {
     window.scrollTo(20, 0);
   }, []);
@@ -21,12 +20,12 @@ const ChampionPage = () => {
       <section className="champ-display">
         <div className="background-asset">
           <div className="background-img">
-            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.id}_0.jpg`} />
+            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.id}_0.jpg`} alt="" />
           </div>
         </div>
         <div className="inner-section">
           <div className="foreground-asset">
-            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.id}_0.jpg`} />
+            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.id}_0.jpg`} alt="Champion splash art" />
           </div>
           <div className="info-dock">
             <div className="champ-name">
@@ -38,7 +37,7 @@ const ChampionPage = () => {
                     </div>
                   </span>
                   <strong className="fXBrkV">
-                    <div className="show-se" >
+                    <div className="show-se">
                       <span>{champ.name}</span>
                     </div>
                   </strong>
@@ -52,7 +51,7 @@ const ChampionPage = () => {
                   <Difficulty champ={champ} />
                 </ul>
               </div>
-              <div className="info-divider"></div>
+              <div className="info-divider" />
               <div className="champ-lore">
                 <p>{champ.lore}</p>
               </div>
@@ -65,6 +64,6 @@ const ChampionPage = () => {
 
     </div>
   );
-}
+};
 
 export default ChampionPage;

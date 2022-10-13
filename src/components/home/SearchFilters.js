@@ -1,35 +1,31 @@
 /* eslint-disable */
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 
 const SearchFilter = ({ search }) => {
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state.champions);
   const [name, setName] = useState('');
   const [role, setRole] = useState('');
   const [difficulty, setDifficulty] = useState('');
 
-
   // Name search box handler
   const handleNameChange = (nameQ) => {
     setName(nameQ);
-    search({ name: nameQ, role: role, difficulty: difficulty });
+    search({ name: nameQ, role, difficulty });
   };
   const resetName = () => {
     setName('');
-    search({ name: '', role: role, difficulty: difficulty });
+    search({ name: '', role, difficulty });
   };
 
   // Role select handler
   const handleRoleChange = (roleQ) => {
     setRole(roleQ);
-    search({ name: name, role: roleQ, difficulty: difficulty });
+    search({ name, role: roleQ, difficulty });
   };
 
   // Difficulty select handler
   const handleDifficultyChange = (diffQ) => {
     setDifficulty(diffQ);
-    search({ name: name, role: role, difficulty: diffQ });
+    search({ name, role, difficulty: diffQ });
   };
 
   return (
@@ -37,13 +33,15 @@ const SearchFilter = ({ search }) => {
       <div className="name-filter">
         <form className="search-box">
           <input value={name} onChange={(e) => { handleNameChange(e.target.value); }} type="text" placeholder=" " />
-          <button type="reset" onClick={resetName}></button>
+          <button type="reset" onClick={resetName} />
         </form>
       </div>
       <div className="role-filter">
         <label className="select" htmlFor="slct-role">
           <select id="slct-role" required="required" value={role} onChange={(e) => { handleRoleChange(e.target.value); }}>
-            <option value="">Filter by role...</option> { /*Can add disabled="disabled" to the first option to disable it*/ }
+            <option value="">Filter by role...</option>
+            {' '}
+            { /* Can add disabled="disabled" to the first option to disable it */ }
             <option value="Mage">Mage</option>
             <option value="Tank">Tank</option>
             <option value="Support">Support</option>
@@ -52,7 +50,7 @@ const SearchFilter = ({ search }) => {
             <option value="Marksman">Marksman</option>
           </select>
           <svg className="sprites">
-            <polyline points="1 1 5 5 9 1"></polyline>
+            <polyline points="1 1 5 5 9 1" />
           </svg>
         </label>
       </div>
@@ -65,12 +63,12 @@ const SearchFilter = ({ search }) => {
             <option value="High">High</option>
           </select>
           <svg className="sprites">
-            <polyline points="1 1 5 5 9 1"></polyline>
+            <polyline points="1 1 5 5 9 1" />
           </svg>
         </label>
       </div>
     </div>
   );
-}
+};
 
 export default SearchFilter;

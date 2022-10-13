@@ -1,4 +1,3 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 
 const Champion = ({ champ }) => (
@@ -10,7 +9,11 @@ const Champion = ({ champ }) => (
 );
 
 Champion.propTypes = {
-  champ: PropTypes.object
+  champ: PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
 };
 
 export default Champion;

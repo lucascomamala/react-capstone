@@ -17,14 +17,14 @@ const HomePage = () => {
     } else {
       dispatch(filterChamps(query));
     }
-  }, [query]);
+  }, [dispatch, query]);
 
   return (
     <div className="home-container">
       <div className="champion-section">
         <SearchFilters search={(q) => setQuery(q)} />
         <div className="champion-grid">
-          {state.detailed ? state.filtered.map((champ) => (
+          {state.detailed !== 0 ? state.filtered.map((champ) => (
             <Link state={champ.id} key={champ.id} className="champion-card" to="champion">
               <Champion champ={champ} />
             </Link>

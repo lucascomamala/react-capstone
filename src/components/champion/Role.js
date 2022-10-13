@@ -1,4 +1,3 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 
 const Role = ({ champ }) => {
@@ -81,6 +80,12 @@ const Role = ({ champ }) => {
     default:
       return null;
   }
+};
+
+Role.propTypes = {
+  champ: PropTypes.shape({
+    tags: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default Role;

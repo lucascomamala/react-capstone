@@ -1,4 +1,3 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 
 const Difficulty = ({ champ }) => {
@@ -61,6 +60,14 @@ const Difficulty = ({ champ }) => {
         </li>
       );
   }
+};
+
+Difficulty.propTypes = {
+  champ: PropTypes.shape({
+    info: PropTypes.shape({
+      difficulty: PropTypes.number,
+    }),
+  }).isRequired,
 };
 
 export default Difficulty;

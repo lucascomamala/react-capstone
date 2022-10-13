@@ -40,6 +40,7 @@ const Difficulty = ({ champ }) => {
     case 8:
     case 9:
     case 10:
+    default:
       return (
         <li className="specs-item">
           <div className="specs-item-icon">

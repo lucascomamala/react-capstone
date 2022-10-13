@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React SpaceShip
+# React-Redux Capstone for Microverse
 
-TBD
+Web application that utilizes Riot's League of Legends API to display a list of character and alloq filtering through them, as well as seeing additional details for each character.
 
 
 ## Built With
@@ -48,6 +48,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The Microverse team
+- Riot for access to their [API](https://developer.riotgames.com/)
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 ## 📝 License
 

@@ -11,10 +11,17 @@ Web application that utilizes Riot's League of Legends API to display a list of 
 - React
 - Redux
 
+## Quick View
+
+![Untitled](https://user-images.githubusercontent.com/10102977/195940045-5685094a-0d55-4047-978d-c72625a9edef.png)
+
 ## Live Demo
 
 [Live Demo Link](https://cosmic-choux-a8eea3.netlify.app/)
 
+## Video Prresentation
+
+[Video Presentation](https://www.loom.com/share/5449f045ce78471a9eef5abef2c1f6f9)
 
 ## Getting Started
 

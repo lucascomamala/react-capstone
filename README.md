@@ -17,7 +17,7 @@ Web application that utilizes Riot's League of Legends API to display a list of 
 
 ## Video Prresentation
 
-https://www.loom.com/share/5449f045ce78471a9eef5abef2c1f6f9
+(Video Presentatio](https://www.loom.com/share/5449f045ce78471a9eef5abef2c1f6f9]
 
 ## Getting Started
 

@@ -2,7 +2,7 @@
 /* eslint-disable no-await-in-loop */
 import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
 
-const DDRAGON_URI = 'http://ddragon.leagueoflegends.com';
+const DDRAGON_URI = 'https://ddragon.leagueoflegends.com';
 const CHAMP_LIST_URI = `${DDRAGON_URI}/cdn/12.19.1/data/en_US/champion.json`;
 
 // First, create the thunk

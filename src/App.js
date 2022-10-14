@@ -1,5 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getChampions } from './redux/HomeSlice';
@@ -10,14 +9,14 @@ import './App.css';
 
 function App() {
   const dispatch = useDispatch();
-  let got = false;
+  const got = useRef(false);
 
   useEffect(() => {
-    if (!got) {
+    if (!got.current) {
       dispatch(getChampions());
-      got = true;
+      got.current = true;
     }
-  }, [got]);
+  });
 
   return (
     <>

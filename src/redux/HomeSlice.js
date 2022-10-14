@@ -1,6 +1,5 @@
 /* eslint no-param-reassign: ["error", { "props": false }] */
 /* eslint-disable no-await-in-loop */
-import axios from 'axios';
 import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
 
 const DDRAGON_URI = 'http://ddragon.leagueoflegends.com';
@@ -10,19 +9,20 @@ const CHAMP_LIST_URI = `${DDRAGON_URI}/cdn/12.19.1/data/en_US/champion.json`;
 export const getChampions = createAsyncThunk(
   'champions/getChampions',
   async () => {
-    const response = await axios.get(CHAMP_LIST_URI);
-    const simple = response.data.data;
+    const response = await fetch(CHAMP_LIST_URI).then((data) => data.json())
+      .then((data) => data.data);
 
-    const idList = Object.keys(simple);
+    const idList = Object.keys(response);
     const uriList = idList.map((id) => `${DDRAGON_URI}/cdn/12.19.1/data/en_US/champion/${id}.json`);
     const detailed = [];
     for (let i = 0; i < uriList.length; i += 1) {
-      const champResponse = await axios.get(uriList[i]);
-      detailed.push(champResponse.data.data[idList[i]]);
+      const champResponse = await fetch(uriList[i]).then((data) => data.json())
+        .then((data) => data.data);
+      detailed.push(Object.values(champResponse)[0]);
     }
 
     const newState = {
-      simple,
+      simple: response,
       detailed,
       filtered: detailed,
     };

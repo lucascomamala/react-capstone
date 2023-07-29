@@ -2,7 +2,7 @@
 
 # React-Redux Capstone for Microverse
 
-Web application that utilizes Riot's League of Legends API to display a list of character and alloq filtering through them, as well as seeing additional details for each character.
+Web application that utilizes Riot's League of Legends API to display a list of characters and allows filtering through them, as well as seeing additional details for each character.
 
 
 ## Built With

@@ -23,6 +23,7 @@ const HomePage = () => {
     <div className="home-container">
       <div className="champion-section">
         <SearchFilters search={(q) => setQuery(q)} />
+        { state.filtered.length === 0 && state.detailed !== 0 && <div className="loading">Loading...</div> }
         <div className="champion-grid">
           {state.detailed !== 0 ? state.filtered.map((champ) => (
             <Link state={champ.id} key={champ.id} className="champion-card" to="champion">

@@ -210,3 +210,9 @@
     padding: 160px 60px;
   }
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -17,7 +17,7 @@ Web application that utilizes Riot's League of Legends API to display a list of 
 
 ## Live Demo
 
-[Live Demo Link](https://cosmic-choux-a8eea3.netlify.app/)
+[Live Demo Link](https://league-roster.netlify.app/)
 
 ## Video Prresentation
 
